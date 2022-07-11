@@ -1,0 +1,27 @@
+1.
+App: 启动程序→执行main函数→通过UIApplicationMain函数→初始化UIApplication对象并且为它设置代理对象→UIapplication对象→程序结束退出
+ViewController: alloc/init→loadView→viewDidLoad→viewWillAppear→viewDidAppear→viewWillDisappear→viewDidDisappear→dealloc
+
+2.
+UIScrollView
+UITableView
+UICollectionView
+UIWebView
+WKWebView
+
+3.
+#import <UIKit/UIKit.h>
+@protocol UITableViewDelegate <NSObject>
+...
+@end
+
+#import <UIKit/UIKit.h>
+@class UIViewController;
+@interface ViewController : UITableView<UITableViewDelegate,UITableViewDataSource>
+...
+@end
+
+@implementation UITableViewDelegate
+...
+@end
+
