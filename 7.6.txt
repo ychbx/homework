@@ -12,12 +12,13 @@ WKWebView
 3.
 #import <UIKit/UIKit.h>
 @protocol UITableViewDelegate <NSObject>
+@optional
 ...
 @end
 
 #import <UIKit/UIKit.h>
 @class UIViewController;
-@interface ViewController : UITableView<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController : UITableView <UITableViewDelegate,UITableViewDataSource>
 ...
 @end
 
